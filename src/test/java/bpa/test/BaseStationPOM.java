@@ -32,7 +32,7 @@ import bpa.page.WeekSelection;
 import util.HTMLLayout;
 import util.WriteConfig;
 
-public class DemoClassStationPOM extends HTMLLayout 
+public class BaseStationPOM extends HTMLLayout 
 {
 	static LoginApplication loginPage;
 	static Dashboard dashboardapp;
@@ -42,7 +42,7 @@ public class DemoClassStationPOM extends HTMLLayout
 	static private Timestamp timestamp;
 	static private WebDriver driver;
 	
-	protected static Logger logr = Logger.getLogger(DemoClassStationPOM.class);
+	protected static Logger logr = Logger.getLogger(BaseStationPOM.class);
 	
 	Properties props = new Properties();
 

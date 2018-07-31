@@ -6,7 +6,7 @@ import org.testng.TestNG;
 import org.testng.annotations.Test;
 
 @Test
-public class StationPickDemo2Complete
+public class StationPickDemoTwo
 {
     public static void main(String[] args)
     {
