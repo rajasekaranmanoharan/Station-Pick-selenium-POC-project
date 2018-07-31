@@ -16,6 +16,7 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.BeforeClass;
@@ -76,7 +77,7 @@ public class DemoClassStationPOM extends HTMLLayout
 		}
 		else if (browser.equals("ie"))
 		{
-			System.setProperty("webdriver.ie.driver", "C://Selenium Environment//Browser Drivers//IEDriverServer.exe");
+			System.setProperty("webdriver.ie.driver", props.getProperty("IEDriverPath"));
 			driver = new InternetExplorerDriver();
 		} 
 		else if (browser.equals("firefox"))
@@ -86,7 +87,8 @@ public class DemoClassStationPOM extends HTMLLayout
 		} 
 		else if (browser.equals("edge"))
 		{
-			
+			System.setProperty("webdriver.gecko.driver", "" + props.getProperty("EdgeDriverPath"));
+			driver = new EdgeDriver();
 		}
 		driver.manage().window().maximize();
 		driver.get(props.getProperty("URL"));

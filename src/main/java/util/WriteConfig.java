@@ -25,6 +25,8 @@ public class WriteConfig
 	        w.write("Screenshotlocation = C://Selenium Environment/Screenshot/UsersJobSelection/"+System.lineSeparator());
 	        w.write("ChromeDriverPath = C://Selenium Environment/Browser Drivers/chromedriver.exe"+System.lineSeparator());
 	        w.write("FireFoxDriverPath = C://Selenium Environment/Browser Drivers/geckodriver.exe"+System.lineSeparator());
+	        w.write("IEDriverPath = C://Selenium Environment/Browser Drivers/IEDriverServer.exe"+System.lineSeparator());
+	        w.write("EdgeDriverPath = C://Selenium Environment/Browser Drivers/MicrosoftWebDriver.exe"+System.lineSeparator());
 	        System.out.println("Created Config file successfully");
 	        w.close();
 	        }
