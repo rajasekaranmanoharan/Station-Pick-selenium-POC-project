@@ -139,7 +139,7 @@ public class ReviewSelection {
 		logr.info("Category: captureScreenshotSave");
 	
 		 //loading properites from properties file
-		fis = new FileInputStream("C:/Selenium Environment/configNew.properties");
+		fis = new FileInputStream("C:/Selenium Environment/config.properties");
 	    props.load(fis);		
 		EventFiringWebDriver e = new EventFiringWebDriver(driver);
 		File srcfile = e.getScreenshotAs(OutputType.FILE);

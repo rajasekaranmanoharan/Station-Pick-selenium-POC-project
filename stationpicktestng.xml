@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Station Pick2" configfailurepolicy="continue">
 		<listeners>
-        <listener class-name="bpa.test.RetryListener"/>
+        <listener class-name="util.RetryListener"/>
   		</listeners>
 		<test name="Users">
 		<parameter name="browser" value="chrome" />

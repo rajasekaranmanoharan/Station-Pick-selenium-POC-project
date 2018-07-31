@@ -50,14 +50,14 @@ public class DemoClassStationPOM extends HTMLLayout
 	public void setupConfig() throws IOException, InterruptedException 
 	{
 		WriteConfig.writeTextFile();
-		FileInputStream fis = new FileInputStream("C://Selenium Environment/configNew.properties");
+		FileInputStream fis = new FileInputStream("C://Selenium Environment/config.properties");
 		props.load(fis);
 		// loading properites from properties file
 		SimpleDateFormat dateformat = new SimpleDateFormat("dd-MM-yyyy-hh-mm-ss");
 		System.setProperty("currenttime", dateformat.format(new Date()));
 		Thread.sleep(3000);
 		PropertyConfigurator.configure(props.getProperty("Log4j"));
-		PropertyConfigurator.configure("C://Selenium Environment/configNew.properties");
+		PropertyConfigurator.configure("C://Selenium Environment/config.properties");
 		Thread.sleep(3000);
 	}
 
