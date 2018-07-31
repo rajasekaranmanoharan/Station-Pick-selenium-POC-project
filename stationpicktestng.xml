@@ -7,7 +7,7 @@
 		<test name="Users">
 		<parameter name="browser" value="chrome" />
 		<classes>
-			<class name="bpa.test.DemoClassStationPOM" />				
+			<class name="bpa.test.BaseStationPOM" />				
 		</classes>
 	</test>
 </suite>
